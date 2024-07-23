@@ -13,10 +13,6 @@ import styled from "styled-components";
 const Main = styled.main`
     background-color: var(--color-grey-50);
     padding: 4rem 4.8rem 6.4rem;
-
-    // TODO - unclear why I've added these?
-    /* grid-column: 2; */
-    /* grid-row: 2; */
     height: 100%;
     overflow: hidden;
 `;
