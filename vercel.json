@@ -1,4 +1,3 @@
 {
-    "_comment": "Below is required to rewrite all incoming paths to refer to index path, otherwise 404 errors will be encountered on refresh.",
     "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
