@@ -1,5 +1,8 @@
 /*
     Based on project from "The Ultimate React Course 2024" by Jonas Schmedtmann
+
+    Updated to:
+    - fix text/background colour in dark mode
 */
 
 import { useState } from "react";
@@ -126,7 +129,8 @@ function Uploader() {
         <div
             style={{
                 marginTop: "auto",
-                backgroundColor: "#e0e7ff",
+                color: "var(--color-grey-100)",
+                backgroundColor: "var(--color-grey-600)",
                 padding: "8px",
                 borderRadius: "5px",
                 textAlign: "center",

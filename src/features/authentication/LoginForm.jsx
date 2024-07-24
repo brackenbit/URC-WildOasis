@@ -1,5 +1,8 @@
 /*
     Based on project from "The Ultimate React Course 2024" by Jonas Schmedtmann
+
+    Updated to:
+    - automatically populate a default demo user, if provided in .env
 */
 
 import { useState } from "react";
@@ -11,8 +14,17 @@ import { useLogin } from "./useLogin";
 import SpinnerMini from "../../ui/SpinnerMini";
 
 function LoginForm() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    let defaultEmail = "";
+    let defaultPassword = "";
+    if (
+        import.meta.env.VITE_DEFAULT_USER_EMAIL &&
+        import.meta.env.VITE_DEFAULT_USER_PASSWORD
+    ) {
+        defaultEmail = import.meta.env.VITE_DEFAULT_USER_EMAIL;
+        defaultPassword = import.meta.env.VITE_DEFAULT_USER_PASSWORD;
+    }
+    const [email, setEmail] = useState(defaultEmail);
+    const [password, setPassword] = useState(defaultPassword);
 
     const { login, isLoggingIn } = useLogin();
 
