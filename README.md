@@ -27,6 +27,7 @@ Improvements made to the project include:
 -   Display first line of stack trace on ErrorFallback.
 -   Added max limit to react-hot-toast.
 -   Import secrets from environment variables.
+-   Prefill default demo user, if defined in .env.
 
 ## Limitations
 
