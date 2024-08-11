@@ -37,3 +37,11 @@ Therefore, there are still some known issues:
 -   No tests are included.
 -   The app is not fully responsive or suitable for mobile.
     -   Things are greatly improved, but admittedly the improvements don't always adhere to the best practices (e.g. there are some magic numbers without a single source of truth). This was an exercise in pragmatism: how good can I get it without a massive refactor!
+
+## Hosted Demo
+
+The application is hosted at: https://the-wild-oasis-rho-ten.vercel.app/
+
+For this demo, account creation and updating are disabled. The sample data uploader in the bottom left can be used to seed example data.
+
+(Note that this is hosted on Vercel/Supabase free tiers, and may have been paused.)
